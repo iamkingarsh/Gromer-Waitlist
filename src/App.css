@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  font-family: var(--primary-font);
+  color: var(--blue-grad);
+}
+
+
+body {
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+}
+
+.ellipse-b1 {
+
+  position: absolute;
+  width: 679px;
+  height: 679px;
+  right: -150px;
+  top: 200px;
+  z-index: -1;
+  background: var(--blue-grad);
+  opacity: 50%;
+  border-radius: 100%;
+  filter: blur(228px);
+}
+
+.ellipse-p1 {
+
+  position: absolute;
+  width: 679px;
+  height: 679px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background: var(--pink-grad);
+  opacity: 70%;
+  border-radius: 100%;
+  filter: blur(228px);
+}
+
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+
+}
+
+.logo {
+  width: 200px;
+}
+
+.Grid {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--glass-bg);
+  border-radius: 5px;
+  border: var(--glass-border);
+  backdrop-filter: blur(12px);
+  border-radius: 5px;
+  border: var(--glass-border);
+  backdrop-filter: blur(12px);
+  margin: 40px 40px;
+
+}
+
+.m-img {
+  height: 90vh;
+}
+
+.H-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+
+.m-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -160px;
+  gap: 1rem;
+  height: 85vh;
+  flex-wrap: nowrap;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.m-contentHeading {
+  font-family: var(--primary-font);
+  background: var(--pink-blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+
+}
+
+.m-contentPara {
+  font-family: var(--secondary-font);
+}
+
+.emailInput {
+  background: var(--glass-bg);
+  appearance: none;
+  border: none;
+  border: var(--glass-border);
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  height: 30px;
+  width: 400px;
+  font-family: var(--secondary-font);
+  backdrop-filter: blur(12px);
+  z-index: 49;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emailInput:focus {
+  outline: none;
+  border: var(--focus-border);
+}
+
+.emailInput::placeholder {
+  color: rgba(255, 255, 255, 0.543);
+}
+
+label,
+p {
+  font-family: 'Exo 2';
+  font-size: 18px;
+}
+
+.waitlist-heading {
+  font-family: var(--primary-font);
+  text-align: center;
+}
+
+.waitlist-num {
+  font-family: var(--primary-font);
+  background: var(--pink-blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.submitBtn {
+  appearance: none;
+  border: none;
+  padding: 16px;
+  background: var(--pink-blue-gradient);
+  font-family: var(--btn-font);
+  text-transform: uppercase;
+  border-radius: 15px;
+  width: 92.6%;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 48;
+  text-align: center;
+}
+
+.submitBtn:disabled {
+  background: gray !important;
+  cursor: not-allowed;
+}
+
+.modalBg {
+  position: fixed;
+  top: -40px;
+  bottom: -40px;
+  left: -40px;
+  right: -40px;
+  background-color: rgb(0 0 0 / 61%);
+  z-index: 49;
+  backdrop-filter: blur(58px);
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+  margin: 0;
+  z-index: 50;
+  width: 550px;
+  max-width: 78vw;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--glass-bg);
+  border: var(--glass-border);
+  backdrop-filter: blur(90px);
+  padding: 12px 24px;
+  gap: 12px;
+  border-radius: 15px;
+
+}
+
+footer {
+  text-align: center;
+  font-family: var(--secondary-font);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.DD {
+  color: white;
+  font-weight: 600;
+}
+
+.DD:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.social-icons {
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons:hover,
+.icons:focus,
+.icons:focus-visible {
+  transform: translateY(-2px);
+  color: var(--pink-blue-gradient);
+  outline: 0;
+  border: 0;
+  background: var(--pink-blue-gradient);
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.noise {
+  z-index: -20;
+  position: absolute;
+  inset: 0;
+  background-image: url(https://astro.build/assets/noise.webp);
+  opacity: 0.6;
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+  height: 1200%;
+}
+
+
+
+.error {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  background: #ffb1b1fc;
+  color: darkred;
+  z-index: 50;
+  font-family: 'Exo 2';
+  backdrop-filter: blur(329px);
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.CloseIcon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+
+@media (max-width: 767px) {
+  .Grid {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--glass-bg);
+    border-radius: 5px;
+    border: var(--glass-border);
+    backdrop-filter: blur(12px);
+    border-radius: 5px;
+    border: var(--glass-border);
+    backdrop-filter: blur(12px);
+    margin: 20px 20px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  #root {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .m-img {
+    width: 100%;
+    height: 22vh;
+
+  }
+
+  .waitlist-heading {
+    font-size: 2.5rem;
+  }
+
+  .H-img {
+    width: 153%;
+    height: 90%;
+    object-fit: cover;
+    opacity: 0.4;
+    object-position: bottom;
+    filter: brightness(0.5);
+  }
+
+  .noise {
+    z-index: -20;
+    position: absolute;
+    inset: 0;
+    background-image: url(https://astro.build/assets/noise.webp);
+    opacity: 0.6;
+    mix-blend-mode: color-burn;
+    pointer-events: none;
+    height: 100%;
+  }
+
+  .m-content {
+    width: 100%;
+    margin: 0;
+    gap: 0.5rem;
+    margin-top: -90px;
+  }
+
+  .logo {
+    width: 180px;
+    z-index: 0;
+    margin-top: -25px;
+  }
+
+  .m-contentHeading {
+    font-size: 2.3rem;
+  }
+
+  .m-contentPara {
+    font-size: 0.98rem;
+  }
+
+  .emailInput {
+    background: var(--glass-bg);
+    appearance: none;
+    border: none;
+    border: var(--glass-border);
+    border-radius: 15px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    height: 26px;
+    width: 290px;
+    font-family: var(--secondary-font);
+    backdrop-filter: blur(12px);
+    z-index: 49;
+  }
+
+  label,
+  p {
+    font-family: 'Exo 2';
+    font-size: 16px;
+  }
+
+  footer {
+    text-align: center;
+    font-family: var(--secondary-font);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    width: 90vw;
+    height: auto;
+    padding: 24px;
+    gap: 12px;
+  }
+
+  .ellipse-b1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 2px;
+    top: 22px;
+    z-index: -1;
+    background: var(--blue-grad);
+    opacity: 80%;
+    border-radius: 100%;
+    filter: blur(228px);
+  }
+
+  .ellipse-p1 {
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background: var(--pink-grad);
+    opacity: 70%;
+    border-radius: 100%;
+    filter: blur(228px);
+  }
+
+  .error {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    background: #ffcacaad;
+    color: darkred;
+    backdrop-filter: blur(210px);
+    z-index: 999999;
+    font-family: 'Exo 2';
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    border-radius: 12px;
+  }
+
+  .submitBtn {
+    appearance: none;
+    border: none;
+    padding: 16px;
+    background: var(--pink-blue-gradient);
+    font-family: var(--btn-font);
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 89.6%;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 48;
+    text-align: center;
+  }
+}

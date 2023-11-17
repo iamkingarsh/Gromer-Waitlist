@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Dreadnoughtus';
+  src: url(../public/assets/fonts/DreadnoughtusMedium.ttf);
+}
+
+
+
+:root {
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--main-bg-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+}
+
+body {
+  --main-bg-color: #000235;
+  --blue-grad: #11BCFF;
+  --pink-grad: #EB20B2;
+  --pink-blue-gradient: linear-gradient(90.2deg, #EB20B2 25.08%, #11BCFF 116.2%);
+  --primary-font: 'Dreadnoughtus', sans-serif;
+  --secondary-font: 'exo 2', sans-serif;
+  --btn-font: 'outfit', sans-serif;
+  --glass-border: 2px solid #ffffff3c;
+  --focus-border: 2px solid #EB20B2;
+  --glass-bg: #ffffff23;
+  color: white;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+button {
+  color: white;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  color: #ffff;
+}
